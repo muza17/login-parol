@@ -4,36 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>registration</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <div class="registration">
-        <div class="conatainer">
+    <div class="container">
+        <div class="registration">
             <h1 class="registration__heading">Create your account</h1>
-            <form action="/">
+            <form class="registration__form" action="/">
                 <div class="registration__form-username">
                     <label for="username">Username</label>
                     <input type="text" name="username" id="username" placeholder="Enter your username">
+                    <p id="usernameError">lalala</p>
                 </div>
                 <div class="registration__form-email">
                     <label for="email">E-mail adress</label>
                     <input type="email" name="email" id="emailaddress" placeholder="Enter your email">
+                    <p id="emailError">lalala</p>
                 </div>
                 <div class="registration__form-password">
                     <label for="password">Password</label>
                     <input type="password" name="password" id="password" placeholder="8 characters only">
+                    <p id="passwordError">lalala</p>
                 </div>
                 <div class="registration__form-checkbox">
                     <input type="checkbox" name="checkbox" id="checkbox">
                     <label for="checkbox">By Signing up, I agree with <a href="/">Terms & Conditions</a></label>
+                    <p id="checkboxError">lalala</p>
                 </div>
                 <div class="registration__form-buttons">
-                    <a href="">
+                    <a href="/">
                         <button type="submit" id="Sign up">Sign up</button>
                     </a>
-                    <a href="">
+                    <a href="/">
                         <button type="submit" id="Sign in">Sign in</button>
                     </a>
                 </div>

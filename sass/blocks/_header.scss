@@ -1,0 +1,171 @@
+.registration{
+    max-width : 560px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__heading{
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", serif;
+        font-weight: 500;
+        margin-top: 100px;
+        margin-bottom: 30px;
+        text-align: center;
+        color: rgb(97, 39, 39);
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        
+        &-username{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+
+            & label{
+                margin: 0;
+                padding: 0;
+                margin-bottom: 10px;
+                text-align: left;
+                font-family: "Poppins", serif;
+                font-weight: 500;
+                color: rgb(255, 189, 145);
+                font-size: 20px;
+            }
+            & input{
+                border: none;
+                background: none;
+                padding: 10px 2px;
+                border-bottom: 2px solid rgb(97, 39, 39);
+                color: white;
+                outline: none;
+            }
+            #usernameError{
+                 margin: 0;
+                padding: 0;
+                margin-left: 10px;
+                text-align: left;
+                font-family: "Poppins", serif;
+                font-weight: 400;
+                color: rgb(211, 31, 31);
+            }
+        }
+        &-email{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+
+            & label{
+                margin: 0;
+                padding: 0;
+                margin-bottom: 10px;
+                text-align: left;
+                font-family: "Poppins", serif;
+                font-weight: 500;
+                color: rgb(255, 189, 145);
+                font-size: 20px;
+            }
+            & input{
+                border: none;
+                background: none;
+                padding: 10px 2px;
+                border-bottom: 2px solid rgb(97, 39, 39);
+                color: white;
+                outline: none;
+            }
+            #emailError{
+                margin: 0;
+               padding: 0;
+               margin-left: 10px;
+               text-align: left;
+               font-family: "Poppins", serif;
+               font-weight: 400;
+               color: rgb(211, 31, 31);
+           }
+        }
+        &-password{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+
+            & label{
+                margin: 0;
+                padding: 0;
+                margin-bottom: 10px;
+                text-align: left;
+                font-family: "Poppins", serif;
+                font-weight: 500;
+                color: rgb(255, 189, 145);
+                font-size: 20px;
+            }
+            & input{
+                border: none;
+                background: none;
+                padding: 10px 2px;
+                border-bottom: 2px solid rgb(97, 39, 39);
+                color: white;
+                outline: none;
+            }
+            #passwordError{
+                margin: 0;
+               padding: 0;
+               margin-left: 10px;
+               text-align: left;
+               font-family: "Poppins", serif;
+               font-weight: 400;
+               color: rgb(211, 31, 31);
+           }
+        }
+        &-checkbox{
+            margin-bottom: 30px;
+            & input{
+                cursor: pointer;
+
+            }
+            & label{
+                margin: 0;
+                padding: 0;
+                margin-left: 10px;
+                text-align: left;
+                font-family: "Poppins", serif;
+                font-weight: 400;
+                color: rgb(97, 39, 39);
+                
+            }
+            #checkboxError{
+                margin: 0;
+               padding: 0;
+               margin-left: 10px;
+               text-align: left;
+               font-family: "Poppins", serif;
+               font-weight: 400;
+               color: rgb(211, 31, 31);
+           }
+            
+        }
+        &-buttons{
+            display: flex;
+            align-items: center;
+            
+            & button{
+                margin: 0;
+                padding: 0;
+                padding: 10px 20px;
+                background: transparent;
+                color: #756788;
+                font-family: "Poppins", serif;
+                font-weight: 400;
+                border: 2px solid #756788;
+                border-radius: 20px;
+                margin-right: 20px;
+                &:hover{
+                    border: 3px solid white;
+                    background-color:#B097B2 ;
+                    color: white;
+                }
+            }
+        }
+    }
+}

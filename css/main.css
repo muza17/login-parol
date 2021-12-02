@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -351,17 +352,22 @@ html {
 }
 
 body {
+  height: 100vh;
   margin: 0;
   padding: 0;
   font-family: "Arial", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-image: url(../../img/pexels-alexander-kovalev-2847648.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container {
-  max-width: examplepx;
-  padding-left: examplepx;
-  padding-right: examplepx;
+  max-width: 1130px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -380,5 +386,213 @@ img {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+.registration {
+  max-width: 560px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.registration__heading {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #612727;
+}
+
+.registration__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.registration__form-username {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.registration__form-username label {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  text-align: left;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  color: #ffbd91;
+  font-size: 20px;
+}
+
+.registration__form-username input {
+  border: none;
+  background: none;
+  padding: 10px 2px;
+  border-bottom: 2px solid #612727;
+  color: white;
+  outline: none;
+}
+
+.registration__form-username #usernameError {
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  text-align: left;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  color: #d31f1f;
+}
+
+.registration__form-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.registration__form-email label {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  text-align: left;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  color: #ffbd91;
+  font-size: 20px;
+}
+
+.registration__form-email input {
+  border: none;
+  background: none;
+  padding: 10px 2px;
+  border-bottom: 2px solid #612727;
+  color: white;
+  outline: none;
+}
+
+.registration__form-email #emailError {
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  text-align: left;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  color: #d31f1f;
+}
+
+.registration__form-password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.registration__form-password label {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  text-align: left;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  color: #ffbd91;
+  font-size: 20px;
+}
+
+.registration__form-password input {
+  border: none;
+  background: none;
+  padding: 10px 2px;
+  border-bottom: 2px solid #612727;
+  color: white;
+  outline: none;
+}
+
+.registration__form-password #passwordError {
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  text-align: left;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  color: #d31f1f;
+}
+
+.registration__form-checkbox {
+  margin-bottom: 30px;
+}
+
+.registration__form-checkbox input {
+  cursor: pointer;
+}
+
+.registration__form-checkbox label {
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  text-align: left;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  color: #612727;
+}
+
+.registration__form-checkbox #checkboxError {
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  text-align: left;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  color: #d31f1f;
+}
+
+.registration__form-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.registration__form-buttons button {
+  margin: 0;
+  padding: 0;
+  padding: 10px 20px;
+  background: transparent;
+  color: #756788;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  border: 2px solid #756788;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.registration__form-buttons button:hover {
+  border: 3px solid white;
+  background-color: #B097B2;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
