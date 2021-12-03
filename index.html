@@ -16,33 +16,36 @@
                 <div class="registration__form-username">
                     <label for="username">Username</label>
                     <input type="text" name="username" id="username" placeholder="Enter your username">
-                    <p id="usernameError">lalala</p>
+                    <p id="usernameError"></p>
                 </div>
                 <div class="registration__form-email">
                     <label for="email">E-mail adress</label>
                     <input type="email" name="email" id="emailaddress" placeholder="Enter your email">
-                    <p id="emailError">lalala</p>
+                    <p id="emailError"></p>
                 </div>
                 <div class="registration__form-password">
                     <label for="password">Password</label>
                     <input type="password" name="password" id="password" placeholder="8 characters only">
-                    <p id="passwordError">lalala</p>
+                    <p id="passwordError"></p>
                 </div>
                 <div class="registration__form-checkbox">
                     <input type="checkbox" name="checkbox" id="checkbox">
                     <label for="checkbox">By Signing up, I agree with <a href="/">Terms & Conditions</a></label>
-                    <p id="checkboxError">lalala</p>
+                    <p id="checkboxError"></p>
                 </div>
                 <div class="registration__form-buttons">
                     <a href="/">
-                        <button type="submit" id="Sign up">Sign up</button>
+                        <button  class="registration__form-button1" type="submit" id="Sign up" onsubmit="signUp()">Sign up</button>
                     </a>
                     <a href="/">
-                        <button type="submit" id="Sign in">Sign in</button>
+                        <button class="registration__form-button2" type="submit" id="Sign in"  onsubmit="signIn()">Sign in</button>
                     </a>
                 </div>
-                
             </form>
+            <p class="registration__text1"></p>
+            <!-- You are signed in. Welcome :) -->
+            <p class="registration__text2"></p>
+            <!-- You are signed up. Welcome :) -->
         </div>
     </div>
 

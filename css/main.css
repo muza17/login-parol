@@ -595,4 +595,24 @@ img {
   background-color: #B097B2;
   color: white;
 }
+
+.registration__text1 {
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  text-align: left;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  color: #14a8da;
+}
+
+.registration__text2 {
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  text-align: left;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  color: #14a8da;
+}
 /*# sourceMappingURL=main.css.map */
