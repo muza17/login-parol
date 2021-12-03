@@ -15,17 +15,17 @@
             <form class="registration__form" action="/">
                 <div class="registration__form-username">
                     <label for="username">Username</label>
-                    <input type="text" name="username" id="username" placeholder="Enter your username">
+                    <input type="text" autocomplete="username" name="username" id="username" placeholder="Enter your username">
                     <p id="usernameError"></p>
                 </div>
                 <div class="registration__form-email">
                     <label for="email">E-mail adress</label>
-                    <input type="email" name="email" id="emailaddress" placeholder="Enter your email">
+                    <input  type="email" name="email" id="emailaddress" placeholder="Enter your email">
                     <p id="emailError"></p>
                 </div>
                 <div class="registration__form-password">
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password" placeholder="8 characters only">
+                    <input autocomplete="current-password" type="password" name="password" id="password" placeholder="8 characters only">
                     <p id="passwordError"></p>
                 </div>
                 <div class="registration__form-checkbox">
@@ -35,7 +35,7 @@
                 </div>
                 <div class="registration__form-buttons">
                     <a href="/">
-                        <button  class="registration__form-button1" type="submit" id="Sign up" onsubmit="signUp()">Sign up</button>
+                        <button  class="registration__form-button1" type="submit" id="Sign up">Sign up</button>
                     </a>
                     <a href="/">
                         <button class="registration__form-button2" type="submit" id="Sign in"  onsubmit="signIn()">Sign in</button>
