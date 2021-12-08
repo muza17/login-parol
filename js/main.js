@@ -1,58 +1,57 @@
 var storage = window.localStorage;
 var form = document.querySelector(".registration__form");
 var signupBtn= document.querySelector(".registration__form-button1");
-signupBtn.addEventListener('submit', signUp);
+var users = JSON.parse(window.localStorage.getItem(users)) ?? [];
+console.log(users);
 
+//eventlisteners
+form.addEventListener('submit', signUp);
+ 
 
 function signUp(e){
     e.preventDefault();
-    console.log("hi");
-
-    //variables
-    var username = document.querySelector("#username").value;
-    var email = document.querySelector("#emailaddress").value;
-    var password  = document.querySelector("#password").value;
     
+    console.log("hi");
+    
+    //variables
+    var currentTime = Date.now();
+    var username = document.querySelector("#username").value.trim();
+    var email = document.querySelector("#emailaddress").value.trim();
+    var password  = document.querySelector("#password").value.trim();
     var success1 = document.querySelector(".registration__text1");
 
-    var user = {
-        username : username,
-        email : email,
-        password : password
-        
-    };
-    console.log("olindi");
+    var foundUser = users.find(item => item.email == email || item.username == username);
 
-    
-    storage.setItem(username, JSON.stringify(user));
-    console.log("user added");
-    success1.innerHTML = "You are signed in. Welcome :)";
-
-
-}
-
-
-function signIn(e){
-    e.preventDefault();
-    console.log("hii");
-
-    //variables
-    var username = document.querySelector("#username").value;
-    var email = document.querySelector("#emailadress").value;
-    var password  = document.querySelector("#password").value;
-    
-    var usernameError = document.querySelector("#usernameError");
-    var passwordError = document.querySelector("#passwordError");
-    var success2 = document.querySelector(".registration__text2");
-
-    var user = storage.getItem(username);
-    var userData = JSON.parse(user);
-
-    if(user == null){
-        usernameError.innerHTML = "Wrong username!";
-    }else if(username == userData.username && password == userData.password){
-        success2.innerHTML = "You are signed in. Welcome :)";
-    }else{
-        password.innerHTML = "Wrong password!";
+    if(!foundUser){
+        users.push(
+            {
+                id : currentTime,
+                username,
+                email,
+                password
+            }
+        )
+            success1.textContent= "You are signed up. Welcome :) ";
+    } else{
+        success1.textContent= "Sorry, this user exists ";
     }
-};
+
+    saveData(users, "users");
+    console.log(users);
+}
+//functions
+var saveData = (data, saveDateAs) => {
+    window.localStorage.setItem(saveDateAs, JSON.stringify(data))
+}
+// var getData = (getDateAs) => {
+//     JSON.parse(window.localStorage.getItem(getDateAs))
+// }
+
+// [
+//     {
+//         id: 183019,
+//         username : "muza",
+//         email: "dnk.com",
+//         password : 234567
+//     }
+// ]
