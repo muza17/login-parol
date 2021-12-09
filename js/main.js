@@ -35,7 +35,7 @@ function signUp(e){
         )
             success1.textContent= "You are signed up. Welcome :) ";
     } else{
-        success1.textContent= "Sorry, this user exists ";
+        success1.textContent= "Sorry, this user exists! ";
     }
 
     saveData(users, "users");
