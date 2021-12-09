@@ -22,13 +22,26 @@ form.addEventListener('submit', (e)=>{
     let foundedusername = users.find(user => user.username == username);
     let foundedpassword = users.find(user =>user.password == password);
     
-    if(!foundedusername){
-        usernameError.textContent = "Wrong username";
+    if(foundedusername && foundedpassword){
+        success.textContent = "You are signed in. Welcome :)";
+        usernameError.textContent = "";
+        passwordError.textContent = "";
     }else if(!foundedpassword){
         passwordError.textContent = "Wrong password";
-    }else if(foundedusername && foundedpassword){
-        success.textContent = "You are signed in. Welcome :)"
+        usernameError.textContent = "";
+        success.textContent = "";
+    }else if(!foundedusername){
+        usernameError.textContent = "Wrong username";
+        passwordError.textContent = "";
+        success.textContent = "";
+    }else if(!foundedusername && !foundedpassword){
+        usernameError.textContent = "Wrong username";
+        passwordError.textContent = "Wrong password";
+        success.textContent = "You can't log in. Try again";
     }
 });
+
+document.getElementById("username").value = "";
+document.getElementById("password").value = "";
 
 
