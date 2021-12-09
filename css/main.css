@@ -605,14 +605,4 @@ img {
   font-weight: 400;
   color: #14a8da;
 }
-
-.registration__text, .signin__text {
-  margin: 0;
-  padding: 0;
-  margin-top: 10px;
-  text-align: left;
-  font-family: "Poppins", serif;
-  font-weight: 400;
-  color: #14a8da;
-}
 /*# sourceMappingURL=main.css.map */

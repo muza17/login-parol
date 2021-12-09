@@ -1,9 +1,11 @@
 // sign in
+//global variables
 var storage = window.localStorage;
 var form = document.querySelector(".signin__form");
 var users = JSON.parse(window.localStorage.getItem("users")) ?? [];
 console.log(users);
 
+//functions
 //eventlisteners
 form.addEventListener('submit', (e)=>{
     e.preventDefault();
@@ -30,52 +32,3 @@ form.addEventListener('submit', (e)=>{
 });
 
 
-//functions
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//function signIn(e){
-//     event.preventDefault();
-//     console.log("hii");
-
-//     //variables
-//     var username = document.querySelector("#username").value;
-//     var email = document.querySelector("#emailadress").value;
-//     var password  = document.querySelector("#password").value;
-    
-//     var usernameError = document.querySelector("#usernameError");
-//     var passwordError = document.querySelector("#passwordError");
-//     var success2 = document.querySelector(".registration__text2");
-
-//     var user = storage.getItem(username);
-//     var userData = JSON.parse(user);
-
-//     if(user == null){
-//         usernameError.innerHTML = "Wrong username!";
-//     }else if(username == userData.username && password == userData.password){
-//         success2.innerHTML = "You are signed in. Welcome :)";
-//     }else{
-//         password.innerHTML = "Wrong password!";
-//     }
-// };
