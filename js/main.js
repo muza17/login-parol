@@ -1,13 +1,15 @@
+//global variables
 var storage = window.localStorage;
 var form = document.querySelector(".registration__form");
 var signupBtn= document.querySelector(".registration__form-button1");
-var users = JSON.parse(window.localStorage.getItem(users)) ?? [];
+var users = JSON.parse(window.localStorage.getItem("users")) ?? [];
 console.log(users);
 
 //eventlisteners
 form.addEventListener('submit', signUp);
  
 
+//functions
 function signUp(e){
     e.preventDefault();
     
@@ -29,7 +31,7 @@ function signUp(e){
                 username,
                 email,
                 password
-            }
+            } 
         )
             success1.textContent= "You are signed up. Welcome :) ";
     } else{
@@ -39,19 +41,7 @@ function signUp(e){
     saveData(users, "users");
     console.log(users);
 }
-//functions
 var saveData = (data, saveDateAs) => {
     window.localStorage.setItem(saveDateAs, JSON.stringify(data))
 }
-// var getData = (getDateAs) => {
-//     JSON.parse(window.localStorage.getItem(getDateAs))
-// }
 
-// [
-//     {
-//         id: 183019,
-//         username : "muza",
-//         email: "dnk.com",
-//         password : 234567
-//     }
-// ]
